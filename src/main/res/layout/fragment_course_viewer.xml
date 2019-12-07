@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.neckbeardproductions.studybuddy.fragments.CourseViewerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/course_viewer_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/course_viewer_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text=""
+                android:layout_toRightOf="@id/course_viewer_name_label"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/course_viewer_code_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/course_viewer_code_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text=""
+                android:layout_toRightOf="@id/course_viewer_code_label"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/course_viewer_description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:id="@+id/course_viewer_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text=""
+                android:layout_below="@id/course_viewer_description_label"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/course_viewer_colour_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Colour"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/course_viewer_colour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_below="@id/course_viewer_colour_heading"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/course_viewer_lecturer_heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lecturers_heading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/course_viewer_lecturers_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/course_viewer_notes_heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/notes_heading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/course_viewer_notes_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/course_viewer_files_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/files_heading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/course_viewer_files_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/course_viewer_lectures_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lectures_heading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/course_viewer_lectures_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/course_viewer_deadlines_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deadlines_heading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/course_viewer_deadlines_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/course_viewer_resources_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resources_heading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/course_viewer_resources_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/text_margin"/>
+
+        <TextView
+            android:id="@+id/course_viewer_autogen_resources_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Autogen_Resources"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/course_viewer_autogen_resources_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/text_margin"/>
+
+    </LinearLayout>
+
+</ScrollView>

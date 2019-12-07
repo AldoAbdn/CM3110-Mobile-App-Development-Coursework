@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.neckbeardproductions.studybuddy.fragments.AddDiaryItemFragment">
+        <TabHost
+            android:id="@+id/add_diary_tab_host"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/details_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/typeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            />
+
+                        <EditText
+                            android:id="@+id/titleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:hint="Title" />
+                        <Spinner
+                            android:id="@+id/coursesSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/Notes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="Notes"
+                            android:inputType="textMultiLine" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/date_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <DatePicker
+                            android:id="@+id/dateText"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:inputType="date" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/time_from_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TimePicker
+                            android:id="@+id/timeFromText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="time" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/time_to_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TimePicker
+                            android:id="@+id/timeToText"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="time" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+</FrameLayout>

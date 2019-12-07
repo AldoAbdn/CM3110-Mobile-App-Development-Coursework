@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lecturer_item" type="id"></item>
+    <item name="note_item" type="id"></item>
+    <item name="file_item" type="id"></item>
+    <item name="lecture_item" type="id"></item>
+    <item name="deadline_item" type="id"></item>
+    <item name="resource_item" type="id"></item>
+    <item name="auto_resource_item" type="id"></item>
+    <item name="course_type_item" type="id"> </item>
+</resources>

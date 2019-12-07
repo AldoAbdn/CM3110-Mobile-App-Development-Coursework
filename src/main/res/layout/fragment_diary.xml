@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.neckbeardproductions.studybuddy.DiaryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/txtDates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <GridView
+            android:id="@+id/timeGridView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:numColumns="1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+        </GridView>
+
+        <GridView
+            android:id="@+id/dayGridView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/timeGridView"
+            android:layout_weight="7"
+            android:numColumns="7">
+
+        </GridView>
+
+        <GridView
+            android:id="@+id/diaryGridView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:numColumns="7"
+            android:layout_weight="7"
+            android:layout_below="@id/dayGridView"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/timeGridView">
+
+        </GridView>
+
+
+    </RelativeLayout>
+</LinearLayout>
